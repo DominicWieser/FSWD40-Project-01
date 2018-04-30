@@ -1,0 +1,145 @@
+
+body
+	margin: 0 auto
+	padding: 0
+	background: #efefef
+	font-family: 'Roboto', sans-serif
+	font-size: 16px
+
+#header
+	height: 130px
+	padding: 10px 0
+	background: #efefef
+
+	ul
+		margin: 0 auto
+		display: table
+		list-style-type: none
+		text-align: center
+
+		li
+			display: table-cell
+			vertical-align: middle
+
+
+			a
+				font-family: lobster, cursive
+				color: #dd5198
+				font-size: 1.3em
+				letter-spacing: 0.4em
+				text-decoration: none
+
+
+			a:first-of-type
+				padding-right: 70px
+
+			a:last-of-type
+				padding-left: 70px
+
+				#logo
+					width: 150px
+					height: 150px
+
+#container
+	background: #9f9f9f
+
+h2
+	padding: 30px 0 30px 30px
+
+//	TIMELINE
+
+#timeline
+	list-style: none
+	width: 90%
+
+	height: 200px
+	margin: 200px 3.5% 0
+	border-top: 6px solid #333
+	display: table
+	border-spacing: 30px 0
+
+	li
+		display: table-cell
+		position: relative
+		min-width: 100px
+
+.circle
+	margin: 0 auto
+	top: -14px
+	left: 0
+	right: 0
+	width: 10px
+	height: 10px
+	background: #fffff0
+	border: 6px solid #dd5198
+	border-radius: 50%
+	display: block
+	position: absolute
+
+.tl-content
+	text-align: center
+	position: relative
+
+.avatar
+	width: 30px
+	height: 30px
+	display: block
+	border-radius: 50%
+	border: 6px solid #dd5198
+	position: absolute
+	margin: 0 auto
+	left: 0
+	right: 0
+	text-align: center
+	line-height: 30px
+	background: #fffff0
+
+.tl-content:before
+	content: ''
+	width: 50px
+	height: 100px
+	left: 50%
+	margin-left: -2px
+	position: absolute
+
+li
+	&.down
+		.tl-content:before
+			border-left: 4px solid #dd5198
+			border-bottom: 4px solid #dd5198
+			-webkit-border-radius: 0 20px
+			-moz-border-radius: 0 20px
+			border-radius: 0 20px
+
+		.avatar
+			top: 80px
+			left: 100px
+
+	&.up
+		.tl-content
+			margin-top: -106px
+
+			&:before
+				border-left: 4px solid #dd5198
+
+		.date
+			margin-top: 106px
+
+		.avatar
+			background: #fffff0
+			margin-top: -30px
+
+#imgbetween
+	filter: gray
+	-webkit-filter: grayscale(1)
+	-webkit-transition: all 0.8s ease-in-out 
+
+
+#imgbetween:hover
+	filter: none
+	-webkit-filer: grayscale(0)
+
+
+
+
+
