@@ -162,6 +162,9 @@ footer
 	line-height: 30px
 	background: #fffff0
 
+.avatar:hover
+	background: #dd5198
+
 .tl-content:before
 	content: ''
 	width: 50px
@@ -181,7 +184,7 @@ li
 
 		.avatar
 			top: 80px
-			left: 100px
+			left: 60px
 
 	&.up
 		.tl-content
@@ -196,6 +199,48 @@ li
 		.avatar
 			background: #fffff0
 			margin-top: -30px
+
+		.avatar:hover
+			background-color: #dd5198
+
+//	TIMELINE HOVER
+.field-tip 
+	position: relative
+	cursor: help
+
+.field-tip .tip-content 
+	position: absolute
+	top: -25px
+	right: 9999px
+	width: 145px
+	margin-right: -150px
+	padding: 10px
+	color: #fff
+	background: #333
+	-webkit-box-shadow: 2px 2px 5px #aaa
+	-moz-box-shadow: 2px 2px 5px #aaa
+	box-shadow: 2px 2px 5px #aaa
+	opacity: 0
+	-webkit-transition: opacity 250ms ease-out
+	-moz-transition: opacity 250ms ease-out
+	-ms-transition: opacity 250ms ease-out
+	-o-transition: opacity 250ms ease-out
+	transition: opacity 250ms ease-out
+
+.field-tip .tip-content:before 
+	content: ' '
+	position: absolute
+	top: 50%
+	left: -16px
+	width: 0
+	height: 0
+	margin-top: -8px
+	border: 8px solid transparent
+	border-right-color: #333
+
+.field-tip:hover .tip-content 
+	right: -20px
+	opacity: 1
 
 // timeline-phone
 #timeline-phone
@@ -247,6 +292,8 @@ li
 //	Contact
 #contact
 	background: #dd5198
+	display: flex
+	flow: row wrap
 
 	form
 		text-align: center
@@ -272,6 +319,10 @@ li
 
 		input[type="button"]:hover
 			background: #cfcfcf
+
+	#jsOutput
+		padding-top: 130px
+		color: #efefef
 
 //	Socialmedia Icons
 .fa-facebook 
@@ -387,6 +438,9 @@ li
 	#timeline-phone
 		display: block
 
+	.invinsible2
+		display: none !important
+		
 @media screen and (min-width: 481px) and (max-width: 1200px)
 	.col-xl
 		width: 100%
@@ -396,6 +450,15 @@ li
 
 	.col-sm
 		width: 50%
+
+	#timeline-phone
+		display: block
+
+	.invinsible
+		display: none !important
+
+
+
 
 
 /*styling personalsite*/
