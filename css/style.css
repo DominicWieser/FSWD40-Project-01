@@ -143,6 +143,9 @@ footer {
   line-height: 30px;
   background: #fffff0; }
 
+.avatar:hover {
+  background: #dd5198; }
+
 .tl-content:before {
   content: "";
   width: 50px;
@@ -169,6 +172,8 @@ li.up .date {
 li.up .avatar {
   background: #fffff0;
   margin-top: -30px; }
+li.up .avatar:hover {
+  background-color: #dd5198; }
 
 .field-tip {
   position: relative;
