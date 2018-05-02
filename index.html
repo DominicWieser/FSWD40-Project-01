@@ -9,7 +9,7 @@
 </head>
 <body>
 	<!-- HEADER Container -->
-	<div id="header">
+	<div id="header" class="invinsible">
 		<ul>
 			<li>
 				<a href="#team">La Familia</a>
@@ -28,7 +28,7 @@
 	<!-- MAIN Container -->
 	<div id="container">
 		<!-- ABOUT SASS MAFIA Container -->
-		<div id="about">
+		<div id="about" class="col-xl invinsible">
 			<h2>Timeline</h2>
 			<!-- TIMELINE -->
 			<ul id="timeline">
@@ -85,58 +85,67 @@
 				</li>
 			</ul>
 		</div>
-		<div class="imgcontainer">
+		<div class="imgcontainer col-xl">
 	
 		</div>
 
 		<!-- MEET THE FAMILIA Container -->
-		<div id="team">
+		<div id="team" class="col-xl">
 			<h2>Our Familia</h2>
 			<ul>
 				<li>
-					<a href="#">
-						<img class="imgsize" src="img/teresa.jpg" alt="Team-member-one">
-					</a>
+					<div class="col-sm">
+						<a href="#">
+							<img class="imgsize" src="img/teresa.jpg" alt="Team-member-one">
+						</a>
+					</div>
 				</li>
 				<li>
-					<a href="#">
-						<img class="imgsize" src="img/dominic.png" alt="Team-member-two">
-					</a>
+					<div class="col-sm">
+						<a href="#">
+							<img class="imgsize" src="img/dominic.png" alt="Team-member-two">
+						</a>
+					</div>
 				</li>
 				<li>
-					<a href="#">
-						<img class="imgsize" src="img/kathrin.png" alt="Team-member-three">
-					</a>
+					<div class="col-sm">
+						<a href="#">
+							<img class="imgsize" src="img/kathrin.png" alt="Team-member-three">
+						</a>
+					</div>
 				</li>
 				<li>
-					<a href="#">
-						<img class="imgsize" src="img/daniel.png" alt="Team-member-four">
-					</a>
+					<div class="col-sm">
+						<a href="#">
+							<img class="imgsize" src="img/daniel.png" alt="Team-member-four">
+						</a>
+					</div>
 				</li>
 			</ul>
 		</div>
-		<div class="imgcontainer">
+		<div class="imgcontainer col-xl">
 			
 		</div>
 
 		<!-- CONTACT Container -->
-		<div id="contact">
-			<h2>Ask for our service</h2>
-			<form>
-				<input type="text" placeholder="Please enter your full name." required>
-				<br><br>
-				<input type="email" placeholder="Please enter your email adress.">
-				<br><br>
-				<textarea placeholder="Please enter your query here."></textarea>
-				<br><br>
-				<input type="button" value="Send to Capo">
-			</form>
-
-			<p id="print"></p> <!-- print goes here -->
+		<div id="contact" class="col-xl">
+			<div class="col-md">
+				<h2 class="gray">Ask for our service</h2>
+				<form>
+					<input type="text" placeholder="Please enter your full name." required>
+					<br><br>
+					<input type="email" placeholder="Please enter your email adress.">
+					<br><br>
+					<textarea placeholder="Please enter your query here."></textarea>
+					<br><br>
+					<input type="button" value="Send to Capo">
+				</form>
+				<p id="print"></p> <!-- print goes here -->
+			</div>
 		</div>
 	</div>
 	<!-- FOOTER -->
-	<footer>
+	<footer class="col-xl">
 		<ul class="social-icons">
 			<li>
 				<a href=""> 
