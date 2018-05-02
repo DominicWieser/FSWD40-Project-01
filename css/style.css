@@ -255,7 +255,9 @@ li.up .avatar:hover {
   filter: none; }
 
 #contact {
-  background: #dd5198; }
+  background: #dd5198;
+  display: flex;
+  flow: row wrap; }
   #contact form {
     text-align: center;
     padding: 50px 5%; }
@@ -276,6 +278,9 @@ li.up .avatar:hover {
       background: #efefef; }
     #contact form input[type="button"]:hover {
       background: #cfcfcf; }
+  #contact #jsOutput {
+    padding-top: 130px;
+    color: #efefef; }
 
 .fa-facebook {
   padding: 10px 14px;
@@ -387,7 +392,10 @@ li.up .avatar:hover {
     text-align: left; }
 
   #timeline-phone {
-    display: block; } }
+    display: block; }
+
+  .invinsible2 {
+    display: none !important; } }
 @media screen and (min-width: 481px) and (max-width: 1200px) {
   .col-xl {
     width: 100%; }

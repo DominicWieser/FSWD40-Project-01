@@ -9,7 +9,7 @@
 </head>
 <body>
 	<!-- HEADER Container -->
-	<div id="header" class="invinsible">
+	<div id="header" class="invinsible2">
 		<ul>
 			<li>
 				<a href="#team">La-Familia</a>
@@ -154,15 +154,19 @@
 			<div class="col-md">
 				<h2 class="gray">Ask for our service</h2>
 				<form>
-					<input type="text" placeholder="Please enter your full name." required>
+					<input id="name" type="text" placeholder="Please enter your full name." required>
 					<br><br>
-					<input type="email" placeholder="Please enter your email adress.">
+					<input id="email" type="email" placeholder="Please enter your email adress.">
 					<br><br>
-					<textarea placeholder="Please enter your query here."></textarea>
+					<textarea id="msg" placeholder="Please enter your query here."></textarea>
 					<br><br>
-					<input type="button" value="Send to Capo">
+					<input id="submit" type="button" value="Send to Capo" onclick="queryMessage()">
 				</form>
-				<p id="print"></p> <!-- print goes here -->
+			</div>
+			<div id="jsOutput" class="col-md">
+				<p id="printName"></p><br> 
+				<p id="printEmail"></p><br>
+				<p id="printMsg"></p><br>
 			</div>
 		</div>
 	</div>
