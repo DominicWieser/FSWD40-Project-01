@@ -1,3 +1,6 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
 
 #header{
 	top: 0;
@@ -118,28 +121,22 @@ p{
 	display: table; 
 	background-image: url("img/About.jpg");
 	max-height: 100%; 
-	width: 100%; 
+	width: 33.3333%; 
 }
 
 .skillcontainer{
 	display: table; 
 	background-image: url("img/contact.jpg");
 	max-height: 100%; 
-	width: 100%;
+	width: 33.3333%;
 }
 
 .servicecontainer{
 	display:table; 
 	background-image: url ("img/services.jpg");
 	max-height: 100%; 
-	width: 100%;
+	width: 33.3333%;
 }
-
-.aboutcontainer, .skillcontainer, .servicecontainer{
-	width: 33.33333333%;
-	height: 350px;
-}
-
 
 
 .abouttext, .skilltext, .servicetext {
@@ -174,4 +171,4 @@ p{
 }
 
 
-
+/*start ab collaboration */
