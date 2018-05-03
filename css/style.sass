@@ -267,33 +267,35 @@ li
 				text-decoration: none
 
 .imgsize
-	height: 200px
-	width: 200px
+	height: 190px
+	width: 190px
+	border-radius: 15px
 
 .hovercontainer
+	margin: 0
 	position: relative
 
 #teresa
 	position: absolute
-	top: 0
-	left: 0
+	top: -7px
+	left: -10px
 	right: 0
 	bottom: 0
-	width: 200px
-	height: 200px
+	width: 210px
+	height: 210px
 	background-size: cover
 	opacity: 0
 	transition: .5 ease
-	background-image: url(../img/overlaydominic.png)
+	background-image: url(../img/overlayteresa.png)
 
 #dominic
 	position: absolute
-	top: 0
-	left: 0
+	top: -7px
+	left: -10px
 	right: 0
 	bottom: 0
-	width: 200px
-	height: 200px
+	width: 210px
+	height: 210px
 	background-size: cover
 	opacity: 0
 	transition: .5 ease
@@ -301,25 +303,25 @@ li
 
 #kathrin
 	position: absolute
-	top: 0
-	left: 0
+	top: -7px
+	left: -10px
 	right: 0
 	bottom: 0
-	width: 200px
-	height: 200px
+	width: 210px
+	height: 210px
 	background-size: cover
 	opacity: 0
 	transition: .5 ease
-	background-image: url(../img/overlaydominic.png)
+	background-image: url(../img/overlaykathrin.png)
 
 #daniel
 	position: absolute
-	top: 0
-	left: 0
+	top: -7px
+	left: -10px
 	right: 0
 	bottom: 0
-	width: 200px
-	height: 200px
+	width: 210px
+	height: 210px
 	background-size: cover
 	opacity: 0
 	transition: .5 ease
@@ -508,13 +510,23 @@ li
 
 	.invinsible2
 		display: none !important
-		
+
+	.textoverlay
+		font-size: 14px  !important
+
+	.avatar-img
+		min-width: 200px
+
 @media screen and (min-width: 481px) and (max-width: 1200px)
 	.col-xl
-		width: 100%
+		width: 100% 
 
 	.col-md
+		width: 50% 
+
+	.col-md2
 		width: 50%
+
 
 	.col-sm
 		width: 50%
@@ -525,3 +537,135 @@ li
 	.invinsible
 		display: none !important
 
+	.textoverlay
+		font-size: 20px !important
+
+//	PERSONAL PAGES
+.quotation
+	background-color: white
+	padding: 30px 0px 30px 0px
+
+#quote
+	text-align: center
+	font-size: 1.5em
+	font-style: italic
+
+.avatar-img
+	width: 100%
+
+.fl-container
+	display: flex
+	flex-flow: row wrap
+
+figure
+	width: 100%
+
+
+.container
+	display: flex
+	flow: row wrap
+
+
+.button
+	width: 100% 
+
+#buttontwo
+	width: 95%
+	font-size: 1.2em
+	cursor: pointer
+	border-radius: 8px
+	padding: 15px 35px
+	margin-left: 2.5%
+	margin-right: 2.5%
+	margin-bottom: 20px
+	margin-top: 20px
+	background-color: #dd5198 
+	color: lightgrey
+	border: none 
+
+#buttontwo:hover
+	background-color: #bf4180
+
+#buttontwo:active
+	background-color: #bf4180
+	box-shadow: 0 5px #666
+	transform: translateY(4px)
+
+.overlay 
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	width: 100%
+	height: 100%
+	opacity: 0
+	transition: .5s ease
+	background-color: #dd5198
+
+.hovercontainer:hover .overlay
+	opacity: 0.9
+
+.textoverlay 
+	color: white
+	font-size: 2em
+	position: absolute
+	padding: 10%
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	-ms-transform: translate(-50%, -50%)
+	text-align: center
+
+#quoteheader
+	padding-left: 0
+	text-align: center
+
+#contentname
+	margin: 0 0 0 30px 
+	font-size: 1.3em
+
+.imagefooter
+	background-image: url(../img/help.png)
+	background-size: cover
+	background-attachment: fixed
+	width: 100%
+	height: 200px	
+	filter: gray
+	-webkit-filter: grayscale(1)
+	-webkit-transition: all 0.8s ease-in-out
+	-moz-transition: all 0.8s ease-in-out
+	transition: all 0.8s ease-in-out
+
+.imagefooter:hover
+	-webkit-filer: grayscale(0)
+	-moz-filer: grayscale(0)
+	filer: grayscale(0)
+	filter: none
+
+.imgheader
+	background-image: url(../img/meetthefamily.jpg)
+	width: 100%
+	height: 400px
+	background-size: cover
+
+.icons
+	text-align: center
+
+.fa-soundcloud
+	padding: 20px 10px
+	margin: 20px 80px 20px 80px
+	font-size: 5em
+
+
+.fa-html5
+	padding: 20px 10px
+	margin: 20px 80px 20px 80px
+	font-size: 5em
+
+
+.fa-git
+	padding: 20px 10px
+	margin: 20px 80px 20px 80px
+	font-size: 5em
+	
