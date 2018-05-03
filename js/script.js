@@ -33,7 +33,7 @@ function queryMessage() {
 	}
 
 	if (message.length > 1 && email.length > 1 && name.length > 1) {
-		document.getElementById("printMsg").innerHTML= "If your message is deemed worthy you may receive a response from a Don personally. Good luck.";
+		document.getElementById("printMsg").innerHTML= "If your message is deemed worthy you may receive a response from a Don personally.";
 	} 
 		else if (message.length < 1) {
 				alert("Please enter a valid message, or risk swift retribution from Capo.");
