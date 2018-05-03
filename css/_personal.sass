@@ -1,11 +1,17 @@
 .quotation
 	width: 100%
+	background-color: white
+	padding: 30px 0px 30px 0px
+
 
 #quote
-	text-align: center	
+	text-align: center
+	font-size: 1.5em
+	font-style: italic
 
 .avatar-img
 	width: 100%
+
 
 .fl-container
 	display: flex
@@ -16,8 +22,9 @@
 	width: 100% 
 
 #buttontwo
-	width: 100%
+	width: 45%
 	font-size: 1.2em
+	cursor: pointer
 	border-radius: 8px
 	padding: 15px 35px
 	margin: 5px 35px 
@@ -25,6 +32,13 @@
 	color: lightgrey
 	border: none 
 
+#buttontwo:hover
+	background-color: #bf4180
+
+#buttontwo:active
+	background-color: #bf4180
+	box-shadow: 0 5px #666
+	transform: translateY(4px)
 
 
 .hovercontainer
@@ -47,13 +61,13 @@
 
 
 .hovercontainer:hover .overlay
-	opacity: 0.5
+	opacity: 0.9
 
 
 
 .textoverlay 
 	color: white
-	font-size: 20px
+	font-size: 35px
 	position: absolute
 	top: 50%
 	left: 50%
@@ -62,3 +76,59 @@
 		text-align: center
 
 
+#textoverlaycontent
+	font-size: 40px
+
+
+#quoteheader
+	text-align: center
+
+
+#contentname
+	margin: 0 0 0 30px 
+	font-size: 1.3em
+
+.imagefooter
+	background-image: url(../img/help.png)
+	background-size: cover
+	background-attachment: fixed
+	width: 100%
+	height: 200px	
+	filter: gray
+	-webkit-filter: grayscale(1)
+	-webkit-transition: all 0.8s ease-in-out
+	-moz-transition: all 0.8s ease-in-out
+	transition: all 0.8s ease-in-out
+
+.imagefooter:hover
+	-webkit-filer: grayscale(0)
+	-moz-filer: grayscale(0)
+	filer: grayscale(0)
+	filter: none
+
+.imgheader
+	background-image: url(../img/meetthefamily.jpg)
+	width: 100%
+	height: 400px
+	background-size: cover
+
+.icons
+	text-align: center
+
+.fa-soundcloud
+	padding: 20px 10px
+	margin: 20px 80px 20px 80px
+	font-size: 5em
+
+
+.fa-html5
+	padding: 20px 10px
+	margin: 20px 80px 20px 80px
+	font-size: 5em
+
+
+.fa-git
+	padding: 20px 10px
+	margin: 20px 80px 20px 80px
+	font-size: 5em
+	
